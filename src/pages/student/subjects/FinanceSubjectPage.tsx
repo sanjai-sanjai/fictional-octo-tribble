@@ -413,6 +413,28 @@ export default function FinanceSubjectPage() {
                 {selectedChapter.chapter === 1 && (
                   <>
                     <h2 className="font-heading text-2xl font-bold text-foreground mt-6 mb-3">What is Money?</h2>
+
+                    {/* Visual: Evolution of Money */}
+                    <div className="bg-secondary/10 rounded-xl p-6 my-6 border border-secondary/20">
+                      <div className="flex items-center justify-between gap-4 mb-4">
+                        <div className="text-center">
+                          <div className="text-4xl mb-2">🪙</div>
+                          <p className="text-sm font-semibold text-foreground">Commodity<br/>Money</p>
+                        </div>
+                        <div className="text-2xl text-secondary">→</div>
+                        <div className="text-center">
+                          <div className="text-4xl mb-2">💵</div>
+                          <p className="text-sm font-semibold text-foreground">Physical<br/>Currency</p>
+                        </div>
+                        <div className="text-2xl text-secondary">→</div>
+                        <div className="text-center">
+                          <div className="text-4xl mb-2">💳</div>
+                          <p className="text-sm font-semibold text-foreground">Digital<br/>Money</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground text-center">The Evolution of Money Over Time</p>
+                    </div>
+
                     <p>Money is a medium of exchange that allows us to trade goods and services without barter. Throughout history, money has evolved from commodity-based systems to modern digital forms.</p>
 
                     <h3 className="font-heading text-lg font-semibold text-foreground mt-5 mb-2">Key Concepts:</h3>
@@ -423,11 +445,23 @@ export default function FinanceSubjectPage() {
                     </ul>
 
                     <h3 className="font-heading text-lg font-semibold text-foreground mt-5 mb-2">Types of Money:</h3>
-                    <ul className="space-y-2 ml-4">
-                      <li>• <strong>Cash:</strong> Physical coins and notes</li>
-                      <li>• <strong>Digital Money:</strong> Transfers, cards, and mobile payments</li>
-                      <li>• <strong>Cryptocurrency:</strong> Digital currencies like Bitcoin</li>
-                    </ul>
+                    <div className="grid grid-cols-3 gap-3 my-4">
+                      <div className="bg-primary/10 rounded-lg p-4 border border-primary/20 text-center">
+                        <div className="text-3xl mb-2">💰</div>
+                        <p className="text-sm font-semibold">Cash</p>
+                        <p className="text-xs text-muted-foreground mt-1">Physical coins and notes</p>
+                      </div>
+                      <div className="bg-secondary/10 rounded-lg p-4 border border-secondary/20 text-center">
+                        <div className="text-3xl mb-2">💳</div>
+                        <p className="text-sm font-semibold">Digital</p>
+                        <p className="text-xs text-muted-foreground mt-1">Cards & mobile payments</p>
+                      </div>
+                      <div className="bg-accent/10 rounded-lg p-4 border border-accent/20 text-center">
+                        <div className="text-3xl mb-2">₿</div>
+                        <p className="text-sm font-semibold">Crypto</p>
+                        <p className="text-xs text-muted-foreground mt-1">Digital currencies</p>
+                      </div>
+                    </div>
                   </>
                 )}
 
