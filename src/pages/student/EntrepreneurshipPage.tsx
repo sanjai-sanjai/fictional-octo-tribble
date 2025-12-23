@@ -86,7 +86,7 @@ export default function EntrepreneurshipPage() {
             </div>
           ))}
         </div>
-      </div>
-    </SubjectLayout>
-  );
-}
+        </div>
+      </SubjectLayout>
+    );
+  }
