@@ -343,10 +343,10 @@ export default function VillagePhysicsExplorer() {
             {showResult && (
               <div className="p-4 rounded-lg bg-muted border border-border/50">
                 <div className="text-center mb-4">
-                  <div className="text-3xl font-bold text-purple-700 mb-2">
+                  <div className="text-3xl font-bold text-accent mb-2">
                     {lastDistance}px
                   </div>
-                  <div className="text-sm text-gray-700">
+                  <div className="text-sm text-foreground/80">
                     The cart rolled {lastDistance} pixels on {SURFACES[selectedSurface].name.toLowerCase()}
                   </div>
                 </div>
