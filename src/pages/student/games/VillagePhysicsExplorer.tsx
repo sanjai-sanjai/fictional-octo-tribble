@@ -403,8 +403,8 @@ export default function VillagePhysicsExplorer() {
         <div className="mt-6 w-full max-w-4xl bg-card p-6 rounded-lg border border-border/50">
           <div className="space-y-4">
             <div>
-              <h3 className="font-bold text-gray-800 mb-2">📘 Concept</h3>
-              <p className="text-sm text-gray-700">
+              <h3 className="font-bold text-foreground mb-2">📘 Concept</h3>
+              <p className="text-sm text-foreground/80">
                 Different surfaces create different amounts of friction. Friction opposes motion and makes things slow down faster.
               </p>
             </div>
