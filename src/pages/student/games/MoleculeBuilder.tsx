@@ -195,6 +195,52 @@ export default function MoleculeBuilder() {
 
   const gameView = (
     <div className={`${isFullscreen ? "fixed inset-0 z-50 bg-background" : ""} flex flex-col`}>
+      <style>{`
+        @keyframes atom-appear {
+          0% { transform: scale(0) rotate(180deg); opacity: 0; }
+          100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+        @keyframes bond-draw {
+          0% { transform: scaleX(0); transform-origin: left; opacity: 0; }
+          100% { transform: scaleX(1); transform-origin: left; opacity: 1; }
+        }
+        @keyframes molecule-spin {
+          0% { transform: rotateZ(0deg); }
+          100% { transform: rotateZ(360deg); }
+        }
+        @keyframes formula-glow {
+          0%, 100% { box-shadow: 0 0 10px rgba(34, 197, 94, 0.3); }
+          50% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.6); }
+        }
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          25% { transform: translateX(-8px); }
+          75% { transform: translateX(8px); }
+        }
+        @keyframes invalid-pulse {
+          0%, 100% { border-color: rgba(239, 68, 68, 0.5); }
+          50% { border-color: rgba(239, 68, 68, 1); }
+        }
+        .atom-appear {
+          animation: atom-appear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        .bond-draw {
+          animation: bond-draw 0.4s ease-out forwards;
+        }
+        .molecule-spin {
+          animation: molecule-spin 1.5s linear;
+        }
+        .formula-glow {
+          animation: formula-glow 1.5s ease-in-out infinite;
+        }
+        .shake-molecule {
+          animation: shake 0.4s ease-in-out;
+        }
+        .invalid-feedback {
+          animation: invalid-pulse 0.6s ease-in-out;
+        }
+      `}</style>
+
       <div className={`${isFullscreen ? "h-screen" : "h-[600px]"} flex flex-col overflow-auto`}>
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border/50">
