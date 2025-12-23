@@ -180,7 +180,9 @@ export default function ReactionDetective() {
                 currentReactionIndex: prev.currentReactionIndex + 1,
                 selectedEffects: [],
                 hasReacted: false,
+                showObservationPanel: false,
                 feedback: "",
+                isReacting: false,
               }));
             } else {
               setShowCompletion(true);
