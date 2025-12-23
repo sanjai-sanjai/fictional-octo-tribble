@@ -345,7 +345,7 @@ export default function ForceBuilder() {
 
             {/* Force Selection */}
             <div className="space-y-3">
-              <label className="text-sm font-semibold text-foreground">
+              <label className="text-sm font-semibold text-white">
                 Select a Force (Same for all objects)
               </label>
               <div className="grid grid-cols-3 gap-3">
@@ -355,7 +355,7 @@ export default function ForceBuilder() {
                     onClick={() => applyForce(force)}
                     disabled={isMoving || forceApplied > 0}
                     variant={forceApplied === force ? "default" : "outline"}
-                    className="w-full text-black"
+                    className="w-full text-white"
                   >
                     Force {force}
                   </Button>
