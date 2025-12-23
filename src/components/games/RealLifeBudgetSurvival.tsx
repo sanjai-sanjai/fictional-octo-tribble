@@ -198,14 +198,14 @@ export function RealLifeBudgetSurvival({ onComplete }: { onComplete: (score: num
           return (
             <Card
               key={expense.id}
-              className={`glass-card border p-4 transition-all ${
+              className={`glass-card border p-5 rounded-xl transition-all ${
                 decision
                   ? decision === "paid"
                     ? "border-secondary/50 bg-secondary/5"
                     : decision === "delayed"
                       ? "border-yellow-500/50 bg-yellow-500/5"
                       : "border-green-500/50 bg-green-500/5"
-                  : "border-border hover:border-primary/50"
+                  : "border-border/60 hover:border-primary/50"
               }`}
             >
               <div className="flex items-start justify-between mb-2">
