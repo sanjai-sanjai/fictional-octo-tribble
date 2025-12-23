@@ -129,21 +129,33 @@ export function GameContainer({
     onExit();
   };
 
+  const isInExpandedMode = isFullscreen || isExpandedView;
+
   return (
     <div ref={containerRef} className="w-full">
       {/* Game Canvas Container */}
       <div
         data-game-canvas
-        className="w-full bg-gradient-to-b from-background to-muted/30 rounded-2xl overflow-hidden"
+        className={`w-full bg-gradient-to-b from-background to-muted/30 rounded-2xl overflow-hidden ${
+          isExpandedView ? "fixed inset-0 z-50 rounded-none" : ""
+        }`}
       >
-        <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
-          {/* Fullscreen Button - Top Right */}
+        <div className="relative w-full" style={{ aspectRatio: isExpandedView ? "auto" : "16 / 9" }}>
+          {/* Expand/Fullscreen Button - Top Right */}
           <button
             onClick={handleFullscreenClick}
             className="absolute top-4 right-4 z-50 h-10 w-10 rounded-lg bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
-            title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
+            title={
+              isFullscreen
+                ? "Exit Fullscreen"
+                : isExpandedView
+                ? "Exit Expanded View"
+                : fullscreenUnavailable
+                ? "Expand to Fill Screen"
+                : "Fullscreen"
+            }
           >
-            {isFullscreen ? (
+            {isInExpandedMode ? (
               <Minimize2 className="h-5 w-5" />
             ) : (
               <Maximize2 className="h-5 w-5" />
@@ -151,12 +163,14 @@ export function GameContainer({
           </button>
 
           {/* Game Component */}
-          <div className="w-full h-full flex items-center justify-center overflow-hidden">
+          <div className={`w-full flex items-center justify-center overflow-hidden ${
+            isExpandedView ? "h-screen" : "h-full"
+          }`}>
             {gameComponent}
           </div>
 
-          {/* Fullscreen Controls */}
-          {isFullscreen && (
+          {/* Expanded/Fullscreen Controls */}
+          {isInExpandedMode && (
             <div className="absolute bottom-4 left-4 right-4 z-50 flex gap-2 justify-center flex-wrap">
               <Button
                 onClick={onRetry}
@@ -180,7 +194,7 @@ export function GameContainer({
       </div>
 
       {/* Instructions & Learning Section */}
-      {!isFullscreen && (
+      {!isInExpandedMode && (
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Instructions */}
           <Card className="glass-card border border-border/50 p-4">
@@ -203,7 +217,7 @@ export function GameContainer({
       )}
 
       {/* Game Controls */}
-      {!isFullscreen && (
+      {!isInExpandedMode && (
         <div className="mt-6 flex gap-3 flex-wrap">
           <Button
             onClick={onRetry}
