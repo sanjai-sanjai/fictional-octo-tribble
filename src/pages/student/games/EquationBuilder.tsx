@@ -516,6 +516,44 @@ export default function EquationBuilder() {
 
   return (
     <>
+      {showSuccessPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+          <div className="success-popup relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-8 max-w-md mx-4 border-2 border-green-500/50">
+            {/* Confetti */}
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="confetti absolute text-2xl pointer-events-none"
+                style={{
+                  left: `${20 + i * 15}%`,
+                  top: '-10px',
+                  animationDelay: `${i * 0.1}s`,
+                }}
+              >
+                {['✨', '🎉', '⭐', '🌟'][i % 4]}
+              </div>
+            ))}
+
+            <div className="text-center space-y-4">
+              <div className="text-5xl animate-bounce">
+                ✨
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-green-600 mb-2">Equation Balanced!</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  Atoms are now equal on both sides. You've got the chemistry right!
+                </p>
+              </div>
+              <div className="pt-2">
+                <p className="text-xs text-gray-500 dark:text-gray-400">
+                  Moving to next reaction...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <ConceptIntroPopup
         isOpen={showIntro && !gameStarted}
         onStart={() => {
