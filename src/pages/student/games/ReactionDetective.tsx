@@ -8,8 +8,11 @@ import { useNavigate } from "react-router-dom";
 interface Reaction {
   id: string;
   substance1: string;
+  substance1Formula: string;
   substance2: string;
+  substance2Formula: string;
   result: string;
+  resultColor: string;
   emoji1: string;
   emoji2: string;
   effects: string[];
