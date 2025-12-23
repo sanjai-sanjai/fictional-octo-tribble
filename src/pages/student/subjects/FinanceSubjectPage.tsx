@@ -704,7 +704,7 @@ export default function FinanceSubjectPage() {
     const GameComponent = playingGame.component;
     return (
       <AppLayout role="student" playCoins={1250} title={playingGame.name}>
-        <div className="px-4 py-6 pb-24">
+        <div className="px-4 py-8 pb-24 w-full max-w-6xl mx-auto">
           <GameContainer
             gameComponent={
               <GameComponent onComplete={handleGameComplete} />
