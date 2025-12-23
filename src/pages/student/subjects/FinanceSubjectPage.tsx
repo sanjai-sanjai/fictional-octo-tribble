@@ -409,16 +409,65 @@ export default function FinanceSubjectPage() {
     return (
       <AppLayout role="student" playCoins={1250} title="Finance">
         <div className="px-4 py-6 pb-24">
-          {/* Back Button */}
-          <div className="mb-6">
+          {/* Subject Header */}
+          <div className="mb-6 slide-up">
+            <div className="glass-card rounded-2xl p-5 border border-border bg-gradient-to-br from-accent/20 to-accent/5">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="h-16 w-16 rounded-2xl bg-accent/30 flex items-center justify-center">
+                  <Wallet className="h-8 w-8 text-accent" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="font-heading text-2xl font-bold text-foreground">Finance</h2>
+                  <p className="text-sm text-muted-foreground">Master your money skills</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-sm">
+                  <span className="text-muted-foreground">Progress</span>
+                  <span className="font-semibold text-accent">{totalProgress}%</span>
+                </div>
+                <AnimatedProgress value={totalProgress} variant="default" />
+              </div>
+            </div>
+          </div>
+
+          {/* Learning Mode Navigation */}
+          <div className="mb-6 flex gap-2 overflow-x-auto pb-2">
             <Button
-              variant="ghost"
+              onClick={() => setLearningMode("active")}
+              className={`flex items-center gap-2 whitespace-nowrap ${
+                learningMode === "active"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
               size="sm"
-              onClick={() => setLearningMode("landing")}
-              className="flex items-center gap-2"
             >
-              <ChevronRight className="h-4 w-4 transform rotate-180" />
-              Back to Finance
+              <Target className="h-4 w-4" />
+              Active
+            </Button>
+            <Button
+              onClick={() => setLearningMode("passive")}
+              className={`flex items-center gap-2 whitespace-nowrap ${
+                learningMode === "passive"
+                  ? "bg-secondary text-secondary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+              size="sm"
+            >
+              <BookOpen className="h-4 w-4" />
+              Passive
+            </Button>
+            <Button
+              onClick={() => setLearningMode("gamified")}
+              className={`flex items-center gap-2 whitespace-nowrap ${
+                learningMode === "gamified"
+                  ? "bg-accent text-accent-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+              size="sm"
+            >
+              <Gamepad2 className="h-4 w-4" />
+              Gamified
             </Button>
           </div>
 
