@@ -366,12 +366,12 @@ export default function VillagePhysicsExplorer() {
                 <div className="space-y-2">
                   {Object.entries(SURFACES).map(([key, surface]) => (
                     <div key={key} className="flex justify-between items-center">
-                      <span className="text-sm font-medium">{surface.name}:</span>
+                      <span className="text-sm font-medium text-foreground">{surface.name}:</span>
                       <div className="flex items-center gap-3 flex-1 ml-4">
-                        <div className="flex-1 bg-gray-200 rounded-full h-2">
+                        <div className="flex-1 bg-muted-foreground/30 rounded-full h-2">
                           {results[key as keyof typeof SURFACES] > 0 && (
                             <div
-                              className="bg-green-500 h-2 rounded-full transition-all"
+                              className="bg-secondary h-2 rounded-full transition-all"
                               style={{
                                 width: `${Math.min((results[key as keyof typeof SURFACES] / 400) * 100, 100)}%`,
                               }}
