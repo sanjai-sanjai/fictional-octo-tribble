@@ -443,8 +443,16 @@ export default function ReactionDetective() {
                   {gameState.hasReacted && !gameState.isReacting && (
                     <div className="text-center space-y-3">
                       <p className="text-lg font-bold text-black dark:text-white">Reaction Complete!</p>
-                      <div className="bg-muted/50 rounded-lg p-3 border-2 border-secondary/30 space-y-2">
-                        <p className="text-sm font-semibold text-black dark:text-white">Product Color: <span className="text-secondary font-bold">{currentReaction.resultColor}</span></p>
+                      <div className="bg-muted/50 rounded-lg p-4 border-2 border-secondary/30 space-y-3">
+                        <div>
+                          <p className="text-xs font-bold text-gray-600 dark:text-gray-300 uppercase tracking-wider mb-2">Chemical Equation</p>
+                          <p className="text-sm font-mono font-bold text-black dark:text-white bg-white/50 dark:bg-slate-700/50 rounded p-3 border border-secondary/30">
+                            {currentReaction.substance1Formula} + {currentReaction.substance2Formula} → {currentReaction.productFormula}
+                          </p>
+                        </div>
+                        <div className="border-t border-secondary/20 pt-3">
+                          <p className="text-sm font-semibold text-black dark:text-white">Product Color: <span className="text-secondary font-bold">{currentReaction.resultColor}</span></p>
+                        </div>
                       </div>
                       <p className="text-sm text-black dark:text-muted-foreground">What did you observe?</p>
                     </div>
