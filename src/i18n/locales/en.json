@@ -68,5 +68,65 @@
     "gujarati": "ગુજરાતી (Gujarati)",
     "odia": "ଓଡିଆ (Odia)",
     "urdu": "اردو (Urdu)"
+  },
+  "subjects": {
+    "chooseSubject": "Choose a Subject",
+    "physics": "Physics",
+    "chemistry": "Chemistry",
+    "biology": "Biology",
+    "mathematics": "Mathematics",
+    "technology": "Technology",
+    "finance": "Finance",
+    "entrepreneurship": "Entrepreneurship",
+    "villageSkills": "Village Skills"
+  },
+  "tasks": {
+    "yourTasks": "Your Tasks",
+    "noTasksAvailable": "No tasks available yet",
+    "completeTasksToEarn": "Complete tasks to earn rewards and level up! 🚀",
+    "categories": {
+      "village": "Village",
+      "family": "Family",
+      "subject": "Subject",
+      "personal": "Personal"
+    },
+    "status": {
+      "locked": "Locked",
+      "ready": "Ready",
+      "inProgress": "In Progress",
+      "awaitingProof": "Awaiting Proof",
+      "underReview": "Under Review",
+      "completed": "Completed",
+      "rejected": "Rejected"
+    },
+    "actions": {
+      "unlockTask": "Unlock task",
+      "startTask": "🚀 Start Task",
+      "continueTask": "▶️ Continue Task",
+      "submitProof": "Submit Proof"
+    }
+  },
+  "rewards": {
+    "rewardsMarketplace": "Rewards Marketplace",
+    "balance": "Balance",
+    "eduCoins": "EduCoins",
+    "earned": "Earned",
+    "spent": "Spent",
+    "redeemRewards": "Redeem Rewards",
+    "awesome": "Awesome!",
+    "earnedByLearning": "You earned this by learning!",
+    "continueShopping": "Continue Shopping",
+    "noRewardsInCategory": "No rewards in this category yet",
+    "keepLearningKeepEarning": "Keep Learning, Keep Earning!",
+    "redeemSuccess": "🎉 You redeemed {{name}}!",
+    "needMoreCoins": "Need {{needed}} more EduCoins!"
+  },
+  "common": {
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "close": "Close",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
   }
 }
