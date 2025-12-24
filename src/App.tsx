@@ -322,6 +322,16 @@ const App = () => (
                     <ProfileSettingsPage />
                   </ProtectedRoute>
                 } />
+                <Route path="/help" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <HelpPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/settings" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <SettingsPage />
+                  </ProtectedRoute>
+                } />
                 {/* Learning Mode Selection - New Flow */}
                 <Route path="/learn/:subject" element={
                   <ProtectedRoute allowedRoles={["student"]}>
