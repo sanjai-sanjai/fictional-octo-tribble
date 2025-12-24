@@ -40,6 +40,7 @@ const subjects = [
 
 export default function StudentDashboard() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const { profile } = useAuth();
   const { userAchievements, checkAchievements, unlockedCount } = useAchievements();
   const { playAchievement } = useSoundEffects();
