@@ -33,6 +33,7 @@ const PhysicsSubjectPage = lazy(() => import("./pages/student/subjects/PhysicsSu
 const ChemistrySubjectPage = lazy(() => import("./pages/student/subjects/ChemistrySubjectPage"));
 const FinanceSubjectPage = lazy(() => import("./pages/student/subjects/FinanceSubjectPage"));
 const EntrepreneurshipSubjectPage = lazy(() => import("./pages/student/subjects/EntrepreneurshipSubjectPage"));
+const EntrepreneurshipActiveLearningPage = lazy(() => import("./pages/student/subjects/EntrepreneurshipActiveLearningPage"));
 const BiologySubjectPage = lazy(() => import("./pages/student/subjects/BiologySubjectPage"));
 const MathematicsSubjectPage = lazy(() => import("./pages/student/subjects/MathematicsSubjectPage"));
 const TechnologySubjectPage = lazy(() => import("./pages/student/subjects/TechnologySubjectPage"));
