@@ -36,6 +36,26 @@
     "logout": "লগআউট",
     "settings": "সেটিংস"
   },
+  "dashboard": {
+    "greeting": "হে",
+    "readyForAdventure": "আজকের অভিযানের জন্য প্রস্তুত!",
+    "todayHours": "আজ",
+    "dayStreak": "নিরবিচ্ছিন্ন দিন",
+    "badges": "ব্যাজ",
+    "subjects": "বিষয়",
+    "dailyChallenges": "দৈনিক চ্যালেঞ্জ",
+    "weeklyChallenges": "সাপ্তাহিক চ্যালেঞ্জ"
+  },
+  "sync": {
+    "lastSynced": "সর্বশেষ সিঙ্ক",
+    "syncing": "সিঙ্ক হচ্ছে...",
+    "syncedUpToDate": "✅ সর্বশেষের সাথে সিঙ্ক হয়েছে",
+    "readyToSync": "সিঙ্ক করার জন্য প্রস্তুত",
+    "justNow": "এইখনই",
+    "unknown": "কখনও সিঙ্ক করা হয়নি",
+    "offline": "অফলাইন — সংযুক্ত হলে সিঙ্ক হবে",
+    "languageChanged": "ভাষা বাংলা এ পরিবর্তিত হয়েছে"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",

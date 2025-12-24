@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { AppLayout } from "@/components/navigation";
 import { GameCard } from "@/components/ui/game-card";
 import { AchievementNotification } from "@/components/ui/achievement-notification";
@@ -39,6 +40,7 @@ const subjects = [
 
 export default function StudentDashboard() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const { profile } = useAuth();
   const { userAchievements, checkAchievements, unlockedCount } = useAchievements();
   const { playAchievement } = useSoundEffects();
@@ -120,9 +122,9 @@ export default function StudentDashboard() {
             <div className="flex items-center gap-3">
               <div className="flex-1">
                 <h2 className="font-heading text-xl font-bold text-foreground">
-                  Hey {userName}! <span className="text-xl">👋</span>
+                  {t('dashboard.greeting')} {userName}! 👋
                 </h2>
-                <p className="mt-1 text-muted-foreground text-sm">Ready for today's adventure!</p>
+                <p className="mt-1 text-muted-foreground text-sm">{t('dashboard.readyForAdventure')}</p>
               </div>
               <img src={mascotPointingUrl} alt="Mascot" className="w-24 h-24 object-contain -mr-2" />
             </div>
@@ -134,17 +136,17 @@ export default function StudentDashboard() {
           <div className="glass-card rounded-xl p-3 text-center border border-border">
             <Clock className="h-5 w-5 text-primary mx-auto mb-1" />
             <p className="font-heading text-lg font-bold text-foreground">2.5h</p>
-            <p className="text-xs text-muted-foreground">Today</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.todayHours')}</p>
           </div>
           <div className="glass-card rounded-xl p-3 text-center border border-border">
             <Flame className="h-5 w-5 text-destructive mx-auto mb-1" />
             <p className="font-heading text-lg font-bold text-foreground">{currentStreak}</p>
-            <p className="text-xs text-muted-foreground">Day Streak</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.dayStreak')}</p>
           </div>
           <div className="glass-card rounded-xl p-3 text-center border border-border">
             <Trophy className="h-5 w-5 text-accent mx-auto mb-1" />
             <p className="font-heading text-lg font-bold text-foreground">{unlockedCount}</p>
-            <p className="text-xs text-muted-foreground">Badges</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.badges')}</p>
           </div>
         </div>
 
@@ -152,7 +154,7 @@ export default function StudentDashboard() {
         <div className="mb-6 slide-up" style={{ animationDelay: "150ms" }}>
           <h3 className="mb-3 font-heading font-semibold text-foreground flex items-center gap-2">
             <Atom className="h-5 w-5 text-primary" />
-            Subjects
+            {t('common.subjects')}
           </h3>
           <div className="grid grid-cols-2 gap-3">
             {subjects.map((subject) => (

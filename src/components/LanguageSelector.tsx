@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Check, X } from 'lucide-react';
+import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
 
 interface LanguageSelectorProps {
@@ -33,8 +34,17 @@ export function LanguageSelector({ isOpen, onClose }: LanguageSelectorProps) {
   );
 
   const handleLanguageSelect = (languageCode: string) => {
+    const selectedLanguage = languages.find(lang => lang.code === languageCode);
     i18n.changeLanguage(languageCode);
     localStorage.setItem('app_language', languageCode);
+
+    // Show toast notification
+    if (selectedLanguage) {
+      toast.success(`Language changed to ${selectedLanguage.name}`, {
+        duration: 3000,
+      });
+    }
+
     onClose();
   };
 

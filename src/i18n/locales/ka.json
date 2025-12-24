@@ -36,6 +36,26 @@
     "logout": "ಲಾಗ್‌ಔಟ್",
     "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
+  "dashboard": {
+    "greeting": "ಹೇ",
+    "readyForAdventure": "ಇಂದಿನ ಸಾಹಸಕ್ಕೆ ಸಿದ್ಧರಾ!",
+    "todayHours": "ಇಂದು",
+    "dayStreak": "ಸತತ ದಿನಗಳು",
+    "badges": "ಬ್ಯಾಡ್ಜ್‌ಗಳು",
+    "subjects": "ವಿಷಯಗಳು",
+    "dailyChallenges": "ದೈನಂದಿನ ಸವಾಲುಗಳು",
+    "weeklyChallenges": "ವಾರಾಂತ್ಯ ಸವಾಲುಗಳು"
+  },
+  "sync": {
+    "lastSynced": "ಕೊನೆಯದಾಗಿ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ",
+    "syncing": "ಸಿಂಕ್ ಆಗುತ್ತಿದೆ...",
+    "syncedUpToDate": "✅ ನವೀಕರಣದೊಂದಿಗೆ ಸಿಂಕ್ ಆಗಿದೆ",
+    "readyToSync": "ಸಿಂಕ್ ಮಾಡಲು ಸಿದ್ಧ",
+    "justNow": "ಈಗಲೇ",
+    "unknown": "ಎಂದಿಗೂ ಸಿಂಕ್ ಆಗಿಲ್ಲ",
+    "offline": "ಆಫ್‌ಲೈನ್ — ಸಂಪರ್ಕವಾದಾಗ ಸಿಂಕ್ ಆಗುವುದು",
+    "languageChanged": "ಭಾಷೆ ಕನ್ನಡ ಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",

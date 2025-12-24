@@ -36,6 +36,26 @@
     "logout": "வெளியேறு",
     "settings": "அமைப்புகள்"
   },
+  "dashboard": {
+    "greeting": "ஹே",
+    "readyForAdventure": "இன்றைய சாகசத்திற்கு தயார்!",
+    "todayHours": "இன்று",
+    "dayStreak": "தின தொடர்",
+    "badges": "பதக்கங்கள்",
+    "subjects": "பாடங்கள்",
+    "dailyChallenges": "தினசரி சவால்கள்",
+    "weeklyChallenges": "வாராந்திர சவால்கள்"
+  },
+  "sync": {
+    "lastSynced": "கடைசியாக ஒத்திசைக்கப்பட்டது",
+    "syncing": "ஒத்திசைப்பு நடைபெறுகிறது...",
+    "syncedUpToDate": "✅ சமீபத்திய நிலையில் ஒத்திசைக்கப்பட்டது",
+    "readyToSync": "ஒத்திசைப்பு செய்யத் தயாராக உள்ளது",
+    "justNow": "இப்போதே",
+    "unknown": "ஒருபோதும் ஒத்திசைக்கப்படவில்லை",
+    "offline": "ஆஃப்லைன் — இணைக்கும்போதே ஒத்திசைப்பு நடைபெறும்",
+    "languageChanged": "மொழி தமிழ் ஆக மாற்றப்பட்டது"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",

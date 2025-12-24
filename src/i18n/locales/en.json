@@ -36,6 +36,26 @@
     "logout": "Logout",
     "settings": "Settings"
   },
+  "dashboard": {
+    "greeting": "Hey",
+    "readyForAdventure": "Ready for today's adventure!",
+    "todayHours": "Today",
+    "dayStreak": "Day Streak",
+    "badges": "Badges",
+    "subjects": "Subjects",
+    "dailyChallenges": "Daily Challenges",
+    "weeklyChallenges": "Weekly Challenges"
+  },
+  "sync": {
+    "lastSynced": "Last synced",
+    "syncing": "Syncing...",
+    "syncedUpToDate": "✅ Synced up to date",
+    "readyToSync": "Ready to sync",
+    "justNow": "Just now",
+    "unknown": "Never synced",
+    "offline": "Offline – will sync when connected",
+    "languageChanged": "Language changed to English"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी (Hindi)",

@@ -36,6 +36,26 @@
     "logout": "ଲଗଆଉଟ",
     "settings": "ସେଟିଂସ"
   },
+  "dashboard": {
+    "greeting": "ହେ",
+    "readyForAdventure": "ଆଜିର ରୋମାଞ୍ଚ ପାଇଁ ପ୍ରସ୍ତୁତ!",
+    "todayHours": "ଆଜି",
+    "dayStreak": "ନିରନ୍ତର ଦିନ",
+    "badges": "ବ୍ୟାଡ୍ଜ୍",
+    "subjects": "ବିଷୟ",
+    "dailyChallenges": "ଦୈନିକ ଚ୍ୟାଲେଞ୍ଜ",
+    "weeklyChallenges": "ସାପ୍ତାହିକ ଚ୍ୟାଲେଞ୍ଜ"
+  },
+  "sync": {
+    "lastSynced": "ଶେଷରେ ସିଙ୍କ୍ ହୋଇଛି",
+    "syncing": "ସିଙ୍କ୍ ହେଉଛି...",
+    "syncedUpToDate": "✅ ଅଦ୍ୟତନ ପର୍ଯ୍ୟନ୍ତ ସିଙ୍କ୍ ହୋଇଛି",
+    "readyToSync": "ସିଙ୍କ୍ ପାଇଁ ପ୍ରସ୍ତୁତ",
+    "justNow": "ଏହିକ୍ଷଣେ",
+    "unknown": "କେବେ ସିଙ୍କ୍ ହୋଇନାହିଁ",
+    "offline": "ଅଫଲାଇନ୍ — ସଂଯୋଗ ହେଲେ ସିଙ୍କ୍ ହେବ",
+    "languageChanged": "ଭାଷା ଓଡ଼ିଆ କୁ ପରିବର୍ତ୍ତିତ ହେଲା"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",

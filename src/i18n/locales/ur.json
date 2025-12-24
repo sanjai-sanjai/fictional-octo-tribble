@@ -36,6 +36,26 @@
     "logout": "لاگ آؤٹ",
     "settings": "ترتیبات"
   },
+  "dashboard": {
+    "greeting": "ہیلو",
+    "readyForAdventure": "آج کے مہم کے لیے تیار!",
+    "todayHours": "آج",
+    "dayStreak": "مسلسل دن",
+    "badges": "بیجز",
+    "subjects": "مضامین",
+    "dailyChallenges": "روزانہ کے چیلنجز",
+    "weeklyChallenges": "ہفتہ وار چیلنجز"
+  },
+  "sync": {
+    "lastSynced": "آخری ہم وقت سازی",
+    "syncing": "ہم وقت سازی ہو رہی ہے...",
+    "syncedUpToDate": "✅ تازہ ترین کے مطابق سنک ہو گیا ہے",
+    "readyToSync": "سنک کے لیے تیار",
+    "justNow": "ابھی ابھی",
+    "unknown": "کبھی سنک نہیں ہوا",
+    "offline": "آف لائن — کنیکٹ ہونے پر سنک کیا جائے گا",
+    "languageChanged": "زبان اردو میں تبدیل کر دی گئی ہے"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",

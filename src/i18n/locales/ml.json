@@ -36,6 +36,26 @@
     "logout": "ലോഗ് ഔട്ട്",
     "settings": "ക്രമീകരണങ്ങൾ"
   },
+  "dashboard": {
+    "greeting": "ഹേ",
+    "readyForAdventure": "ഇന്നത്തെ സാഹസത്തിനായി തയ്യാറാണോ!",
+    "todayHours": "ഇന്ന്",
+    "dayStreak": "തുടർച്ചയായ ദിവസങ്ങൾ",
+    "badges": "ബാഡ്ജുകൾ",
+    "subjects": "വിഷയങ്ങൾ",
+    "dailyChallenges": "ദൈനംദിന സവാലുകൾ",
+    "weeklyChallenges": "സാപ്താഹിക സവാലുകൾ"
+  },
+  "sync": {
+    "lastSynced": "അവസാനമായി സിങ്ക് ചെയ്തത്",
+    "syncing": "സിങ്ക് ചെയ്യുന്നു...",
+    "syncedUpToDate": "✅ പുതുക്കലോടുകൂടി സിങ്ക് ചെയ്തു",
+    "readyToSync": "സിങ്ക് ചെയ്യാൻ തയ്യാറാണ്",
+    "justNow": "ഇപ്പോൾ തന്നെ",
+    "unknown": "ഒരിക്കലും സിങ്ക് ചെയ്തിട്ടില്ല",
+    "offline": "ഓഫ്ലൈൻ — കണക്ട് ആകുമ്പോൾ സിങ്ക് ചെയ്യും",
+    "languageChanged": "ഭാഷ മലയാളം ആയി മാറി"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",

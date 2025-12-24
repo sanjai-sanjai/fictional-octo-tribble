@@ -36,6 +36,26 @@
     "logout": "లాగআউట్",
     "settings": "సెట్టింగ్‌లు"
   },
+  "dashboard": {
+    "greeting": "హే",
+    "readyForAdventure": "ఈరోజు సాహసానికి సిద్ధమా!",
+    "todayHours": "ఈ రోజు",
+    "dayStreak": "నిరంతర రోజులు",
+    "badges": "బ్యాడ్జ్‌లు",
+    "subjects": "విషయాలు",
+    "dailyChallenges": "దినసరి సవాళ్లు",
+    "weeklyChallenges": "వారం సవాళ్లు"
+  },
+  "sync": {
+    "lastSynced": "చివరిసారి సింక్ అయింది",
+    "syncing": "సింక్ జరుగుతోంది...",
+    "syncedUpToDate": "✅ తాజా స్థితికి సింక్ చేయబడింది",
+    "readyToSync": "సింక్ కోసం సిద్ధంగా ఉంది",
+    "justNow": "ఇప్పుడే",
+    "unknown": "ఎప్పుడూ సింక్ చేయబడలేదు",
+    "offline": "ఆఫ్‌లైన్ — కనెక్ట్ అయిన తర్వాత సింక్ చేయబడుతుంది",
+    "languageChanged": "భాష తెలుగు గా మార్చబడింది"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",
