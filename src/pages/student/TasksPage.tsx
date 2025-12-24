@@ -407,13 +407,13 @@ export default function TasksPage() {
           {selectedStatusFilter !== "all" && (
             <div className="flex items-center justify-between px-1 py-2 border-b border-border/30">
               <p className="text-sm font-semibold text-foreground">
-                📋 Showing: {getStatusLabel()}
+                {t('tasks.showing')}: {getStatusLabel()}
               </p>
               <button
                 onClick={() => setSelectedStatusFilter("all")}
                 className="text-xs text-muted-foreground hover:text-primary transition-colors"
               >
-                View All
+                {t('tasks.viewAll')}
               </button>
             </div>
           )}
