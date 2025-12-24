@@ -92,7 +92,7 @@ interface GameState {
   totalRevenue: number;
 }
 
-export function IdeaToIncome({ onComplete }: { onComplete: (score: number) => void }) {
+export function IdeaToIncome({ onComplete, onBack }: { onComplete: (score: number) => void; onBack?: () => void }) {
   const [gameState, setGameState] = useState<GameState>({
     phase: "splash",
     selectedProblems: [],
@@ -106,6 +106,17 @@ export function IdeaToIncome({ onComplete }: { onComplete: (score: number) => vo
   const [showProblemDetail, setShowProblemDetail] = useState<string | null>(null);
   const [ideaText, setIdeaText] = useState("");
   const [isSubmittingIdea, setIsSubmittingIdea] = useState(false);
+  const [showExitConfirm, setShowExitConfirm] = useState(false);
+
+  const handleBackPress = () => {
+    // Show confirmation only if game is in progress (explore or pitch phase)
+    if ((gameState.phase === "explore" && gameState.selectedProblems.length > 0) ||
+        (gameState.phase === "pitch" && gameState.npcReactions[gameState.selectedProblems[gameState.currentProblemIndex]]?.length > 0)) {
+      setShowExitConfirm(true);
+    } else if (onBack) {
+      onBack();
+    }
+  };
 
   // Phase: Start Screen
   const handleStartGame = () => {
