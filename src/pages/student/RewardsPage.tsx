@@ -198,10 +198,25 @@ export default function RewardsPage() {
             <div className="relative mb-8 slide-up">
               {/* Primary Wallet Bar */}
               <div className="flex flex-row">
-                <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-6 mb-6 border border-accent/20">
+                <div
+                  className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl mb-6 border border-accent/20"
+                  style={{
+                    padding: "24px",
+                  }}
+                >
+                  <div
+                    style={{
+                      color: "rgb(138, 148, 168)",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      lineHeight: "20px",
+                      marginBottom: "4px",
+                    }}
+                  >
+                    Balance
+                  </div>
                   <div className="flex items-center justify-between">
                     <div className="text-left">
-                      <p className="text-sm text-muted-foreground mb-1 font-bold">Balance</p>
                       <div className="flex flex-row items-center gap-3">
                         <h2 className="font-display text-4xl font-bold text-accent">
                           {currentBalance.toLocaleString()}
@@ -214,26 +229,30 @@ export default function RewardsPage() {
                 </div>
                 <img
                   loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F128ddd532bd34e33805885edbd9b265d%2F9678a1fbc79b466e821d24748b6cf682"
                   style={{
-                    aspectRatio: "1.07",
+                    aspectRatio: "1.07 / 1",
                     objectFit: "contain",
-                    objectPosition: "center",
                     width: "100%",
-                    marginLeft: "20px",
+                    maxWidth: "140px",
                     minHeight: "20px",
                     minWidth: "20px",
-                    overflow: "hidden",
+                    margin: "0 auto",
                   }}
-                  className="max-sm:max-w-[140px] max-sm:m-0 max-sm:ml-[7px] hero-coin-image"
+                  className="hero-coin-image"
                 />
               </div>
 
               {/* Secondary Stats Row - Glass Cards */}
               <div className="flex gap-4">
                 {/* Earned Card */}
-                <div className="flex-1 glass-card rounded-xl p-4 border border-border/50">
-                  <p className="text-xs text-muted-foreground mb-2 font-bold">Earned</p>
+                <div
+                  className="flex-1 glass-card rounded-xl border border-border/50"
+                  style={{
+                    padding: "16px",
+                  }}
+                >
+                  <p className="text-xs text-muted-foreground mb-2 font-bold">Earned&nbsp;📈</p>
                   <div className="flex items-center gap-2">
                     <p className="font-heading text-2xl font-bold text-secondary">
                       {earned.toLocaleString()}
@@ -257,8 +276,13 @@ export default function RewardsPage() {
                 </div>
 
                 {/* Spent Card */}
-                <div className="flex-1 glass-card rounded-xl p-4 border border-border/50">
-                  <p className="text-xs text-muted-foreground mb-2 font-bold">Spent</p>
+                <div
+                  className="flex-1 glass-card rounded-xl border border-border/50"
+                  style={{
+                    padding: "16px",
+                  }}
+                >
+                  <p className="text-xs text-muted-foreground mb-2 font-bold">Spent 📉</p>
                   <div className="flex items-center gap-2">
                     <p className="font-heading text-2xl font-bold text-primary">
                       {spent.toLocaleString()}
