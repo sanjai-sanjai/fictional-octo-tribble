@@ -36,6 +36,16 @@
     "logout": "লগআউট",
     "settings": "সেটিংস"
   },
+  "sync": {
+    "lastSynced": "সর্বশেষ সিঙ্ক",
+    "syncing": "সিঙ্ক হচ্ছে...",
+    "syncedUpToDate": "✅ সর্বশেষের সাথে সিঙ্ক হয়েছে",
+    "readyToSync": "সিঙ্ক করার জন্য প্রস্তুত",
+    "justNow": "এইখনই",
+    "unknown": "কখনও সিঙ্ক করা হয়নি",
+    "offline": "অফলাইন — সংযুক্ত হলে সিঙ্ক হবে",
+    "languageChanged": "ভাষা বাংলা এ পরিবর্তিত হয়েছে"
+  },
   "languages": {
     "english": "English",
     "hindi": "हिंदी",
