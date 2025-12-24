@@ -37,7 +37,7 @@
     "settings": "Settings"
   },
   "dashboard": {
-    "greeting": "Hey {name}! 👋",
+    "greeting": "Hey",
     "readyForAdventure": "Ready for today's adventure!",
     "todayHours": "Today",
     "dayStreak": "Day Streak",
